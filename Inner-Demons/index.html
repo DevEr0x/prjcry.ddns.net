@@ -1,1 +1,208 @@
-<DOCTYPE html>
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Inner Demons</title>
+        <link href="https://fonts.googleapis.com/css?family=Revalia" rel="stylesheet"> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background: black;
+            }
+            #header{
+                font-size: 200%;
+                font-family: 'Revalia', cursive;
+                text-align: center;
+                color: aqua;
+            }
+            #sidebar{
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                height: 28.8%;
+                width: 200px;
+                border-left: aqua 2px solid;
+                padding-top: 670px;
+            }
+            #info_sidebar{
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                height: 89.4%;
+                width: 200px;
+                border-right: 2px aqua solid;
+                padding-top: 100px;
+            }
+            #container{
+                background-color: gray;
+                position: absolute;
+                width: 65%;
+                height: 700px;
+                border: 2px solid aqua;
+                text-align: center;
+                left: 15%;
+            }
+            .sidebar_element{
+                position: absolute;
+                text-align: right;
+                float: right;
+                right: 0px;
+                width: 200px;
+                background: gray;
+                color: aqua;
+                text-align: center;
+                border: 1px aqua solid;
+                visibility: visible;
+            }
+            .sidebar_element:hover{
+                background: aqua;
+                color: black;
+                border: 1px gray solid;
+            }
+            .side_container{
+                visibility: hidden;
+                width: 920px;
+                height: 600px;
+                background: gray;
+                border: 2px aqua solid;
+                float: right;
+                right: 20px;
+                margin-top: -550px;
+                padding-left: 5px;
+            }
+            .side_container:hover{
+                visibility: visible;
+            }
+            strong{
+                font-size: 125%;
+                color: aqua;
+            }
+            p{
+                color: white;
+                margin: 0px;
+            }
+            .info_head{
+                background: gray;
+                color: aqua;
+                text-align: center;
+                border: aqua 1px solid;
+            }
+            .info{
+                background: gray;
+                padding: 5px;
+                border: aqua 1px solid;
+            }
+            #footer{
+                position: fixed;
+                bottom: 0px;
+                background: gray;
+                border-top: 2px aqua solid;
+                width: 100%;
+                text-align: center;
+                padding: 5px;
+            }
+            div div h3{
+                margin-bottom: 0px;  
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="header">
+            <h1>Inner Demons</h1>
+        </div>
+
+        <div id="sidebar">
+            <div class="side_container">
+                <h3 class="sidebar_element">Developers</h3>
+                <h1>Developers:</h1>
+                <ul>
+                    <li><strong>Eric Mazza</strong></li>
+                    <p>Does some things - Also known by the alias: <strong>DevEr0x</strong></p>
+                    <p>Check out his website: <a href="http://er0x.ddns.net">Here!</a></p><br>
+                    <li><strong>Ben Kennard</strong></li>
+                    <p>This guy is 100% a real person... we think.</p>
+                    <p>Does he even use social media? Weird.</p><br>
+                    <li><strong>Shayne Lisk</strong></li>
+                    <p>He has really cool hair, seriously, you'll love this dudes hair.</p>
+                    <p>Does anyone even use social media? Weird.</p><br>
+                </ul>
+            </div>
+
+            <div class="side_container">
+                <h3 class="sidebar_element">How To play</h3>
+                <h1>How to Play:</h1>
+                <h3>Movement Controls</h3>
+                <p>
+                    To move around, the player uses the [A] and [D] keys. (A for left, and D for right)<br>
+                    The way the game is styled restricts upwards and downwards movement. You may only go left and right. <br>
+                    <br>
+                    <strong>WARNING</strong>
+                    Do not use the arrow keys AT ALL while you have the games window selected.<br> 
+                    Doing so can cause the game to crash, and none of us want that.
+                </p>
+                <h3>Loot</h3>
+                <p>
+                    In the game, the player has a chance to come across chests.<br> 
+                    If the player walks in front of the chest, they are able to open the chest.<br>
+                    So long as the player is standing in front of the chest, they can press the [E] key to open<br> 
+                    the chest. Doing so isn't always going to be a good thing, so it's risky.<br>
+                    <br>
+                    If you do happen to get loot, then you can check the "Pause" menu which is literally just an inventory.<br> 
+                    In this menu, you can change which weapon you have equipped.<br>
+                    <br>
+                    <strong>Please note:</strong>
+                    The "Pause" button doesn't actually pause anything. If you pause while being attacked, <br>
+                    the enemy will not stop for you to change to your glowing spear, this ain't fallout.<br>
+                </p>
+                <h3>Attacking</h3>
+                <p>This one is fairly straight forward... just walk up to the enemy and click, <br>
+                    then it should be dead. (It's not actually THAT easy)</p>
+            </div>
+
+            <div class="side_container">
+                <h3 class="sidebar_element">About the Game</h3>
+                <h1>About The Game:</h1>
+                <p>
+                    This is a dungeon crawler game where the player gets multiple customization choices.<br>
+                    They are able to choose their gender, and one of the preset character looks, based on their gender.<br>
+                    They are able to collect cool items, and they can fight monsters down in the deepest depths of a dungeon. <br>
+                    The player has access to an inventory menu, where they can swap out their weapons, and experiment with the <br>
+                    damage modifiers given by each weapon. <br>
+                    The player is able to gain these weapons from searching chests and gaining loot.<br>
+                    <br>
+                    <strong>BUT BE WARY:</strong><br>
+                    The chests don't always give you helpful boosts...<br>
+                    <br>
+                    The player can fight a giant boss monster, and truly face their Inner Demons.<br>
+                    *cue dramatic music*
+                </p>
+            </div>
+
+            <div class="side_container">
+                <h3 class="sidebar_element">Download</h3>
+                <h1>Download:</h1>
+                <p>Do we have a download link yet? No? Alright, go away, we don't have anything for you.</p>
+            </div>
+
+        </div>
+
+        <div id="info_sidebar">
+            <h3 class="info_head">Hello!</h3>
+            <p class="info">
+                This Website is an information based site here for the sole purpose of providing users with information 
+                about our game, Inner Demons. For more information about the game, please hover 
+                over one of the selections to the right of the screen.
+            </p>
+        </div>
+
+        <div id="footer">
+            <p>Site design by: DevEr0x (Eric Mazza)</p>
+        </div>
+    </body>
+</html>
